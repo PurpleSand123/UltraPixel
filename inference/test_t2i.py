@@ -163,8 +163,8 @@ if __name__ == "__main__":
             torch.cuda.empty_cache()
             imgs = show_images(sampled)
             for idx, img in enumerate(imgs):
-                print(os.path.join(save_dir, args.prompt[:20]+'_' + str(cnt).zfill(5) + '.jpg'), idx)
-                img.save(os.path.join(save_dir, args.prompt[:20]+'_' + str(cnt).zfill(5) + '.jpg'))
+                print(os.path.join(save_dir, args.prompt[:200]+'_' + str(cnt).zfill(5) + '.jpg'), idx)
+                img.save(os.path.join(save_dir, args.prompt[:200]+'_' + str(cnt).zfill(5) + '.jpg'))
                 
             
     print('finished! Results at ', save_dir )
