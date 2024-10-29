@@ -270,7 +270,7 @@ prompt_list = [
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run multiple ScaleCrafter instances in parallel')
     parser.add_argument('--gpu', default='0', type=str, help='GPU id')
-    parser.add_argument('--num_gpus', default=50, type=int, help='Number of GPUs')
+    parser.add_argument('--num_gpus', default=2, type=int, help='Number of GPUs')
     parser.add_argument('--run_file', default='inference/test_t2i.py', type=str, help='File to run')
     parser.add_argument('--width', type=int, default=4096, help='image width')
     parser.add_argument('--height', type=int, default=2048, help='image height')
